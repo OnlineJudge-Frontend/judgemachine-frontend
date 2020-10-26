@@ -33,7 +33,6 @@ const App = () => {
       <Route component={Homeworkcontent} path="/homeworkcontent" />
       <Route component={HomeworkCheck} path="/homeworkCheck" />
       <Route component={HomeworkSubmit} path="/HomeworkSubmit" />
-
       <Route component={DashboardPage} path="/DashboardPage" />
 
     </>

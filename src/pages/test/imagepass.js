@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import styled from 'styled-components';
-import Button from '../../components/common/Button';
+import Button from '../../components/common/Button_1';
 import { Link } from 'react-router-dom';
 
 const Bgimg = styled.div`
