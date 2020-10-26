@@ -74,9 +74,11 @@ const Positioner = styled.div`
 const Box = styled.div`
     width: 100%;
     height: 50px;
-    background:  #EBEBEB 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
+    background:  #e9ecef 0% 0% no-repeat padding-box;
+    border: 0px solid #707070;
     opacity: 0.83;
+    display:flex;
+    justify-content:space-evenly;
 
     .meun-ul{
       display: flex;
@@ -90,9 +92,8 @@ const Box = styled.div`
       text-align: center;
       font-size: 20px;
       font-weight: bold;
-      padding-left: 30px;
-      margin-left: 50px;
-      padding-right: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
       height: 49px;
     }
 
@@ -113,11 +114,11 @@ const Box = styled.div`
         
     .underbar{
       background-color:#1062E5;
-      width: 102px;
-      height: 10px;        
+      width: 141px;
+      height: 5px;        
       position:absolute;
-      top:370px;
-      left:90px   
+      top:375px;
+      left:568px   
     }
 `;
 

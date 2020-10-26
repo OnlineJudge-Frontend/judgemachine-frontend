@@ -4,29 +4,125 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import HeaderContainer from '../containers/Base/HeaderContainer';
 
-   
-const Classroombox = styled.div`
-    width: 300px;
-    height: 300px;
-    background:  #EBEBEB 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
-    opacity: 0.83;
+
+const Sidebox = styled.div`
+    margin-left:250px;
+    margin-right:250px;
+    height:100vh;
+    weight:100vw;
 `;
-   
+
+const SBTOP = styled.div`
+    display:flex;
+    margin-top:100px;
+`;
+
+
+const SBBottom = styled.div`
+    display:flex;
+    margin-top:50px;
+    margin-bottom:400px;
+`;
+
+const Classroom = styled.div`
+    width: 450px;
+    height: 350px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000027;
+    opacity: 1;
+    text-decoration:none;
+
+    .header{
+        padding: 20px;
+        text-align: center;
+        font: normal normal normal 20px/12px Segoe UI;
+        letter-spacing: 3px;
+        color: #4D4F5C;
+    }
+`;
+
+const CRbody = styled.div`
+    width: 450px;
+    height: 250px;
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000027;
+`;
+
+const Homework = styled.div`
+    width: 450px;
+    height: 350px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000027;
+    opacity: 1;
+    text-decoration:none;
+    position: absolute;
+    left: 800px;
+
+    .header{
+        padding: 20px;
+        text-align: center;
+        font: normal normal normal 20px/12px Segoe UI;
+        letter-spacing: 3px;
+        color: #4D4F5C;
+    }
+`;
+
+const Notice = styled.div`
+    width: 450px;
+    height: 350px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000027;
+    opacity: 1;
+    text-decoration:none;
+    position: absolute;
+
+    .header{
+        padding: 20px;
+        text-align: center;
+        font: normal normal normal 20px/12px Segoe UI;
+        letter-spacing: 3px;
+        color: #4D4F5C;
+    }
+`;
+
 
 class DashboardPage extends Component {
     render(){
         return(
             <div>
-                <Classroombox>
-                    <div className="header">
-                        <p>CLASSROOM</p>
-                    </div>
-                </Classroombox>
+                <Sidebox>
+                    <SBTOP>
+                        <Classroom>
+                            <div className="header">
+                                CLASSROOM
+                            </div>
+                            <CRbody>
+                            </CRbody>
+                        </Classroom>
+                        <Homework>
+                            <div className="header">
+                                HOMEWORK
+                            </div>
+                            <CRbody>
+                            </CRbody>
+                        </Homework>
+                    </SBTOP>
+                    <SBBottom>
+                        <Notice>
+                            <div className="header">
+                                공지사항
+                            </div>
+                            <CRbody>
+                            </CRbody>
+                        </Notice>
+
+                    </SBBottom>
+                </Sidebox>
                 <HeaderContainer/>
             </div>
-
-
         );
     }
 }
