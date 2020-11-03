@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 //import CarouselPage from './pages/CarouselPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
@@ -14,7 +15,7 @@ import HomeworkSubmit from './pages/HomeworkSubmit';
 import ExamCheck from './pages/ExamCheck';
 import ImagePass from './pages/test/imagepass';
 import DashboardPage from './pages/DashboardPage';
-
+import ContestIndex from './pages/ContestIndex';
 
 
 const App = () => {
@@ -34,9 +35,11 @@ const App = () => {
       <Route component={HomeworkCheck} path="/homeworkCheck" />
       <Route component={HomeworkSubmit} path="/HomeworkSubmit" />
       <Route component={DashboardPage} path="/DashboardPage" />
+      <Route component={ContestIndex} path="/ContestIndex" />
 
     </>
   );
 };
 
 export default App;
+
