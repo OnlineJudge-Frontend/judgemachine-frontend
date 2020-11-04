@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Header from '../../components/base/Header';
 import { Link } from 'react-router-dom';
-
+import {Button} from 'reactstrap';
 
 const Headermenu = styled.div`
     .meun-ul{
@@ -22,9 +22,20 @@ const Headermenu = styled.div`
     .menu-li:hover{
           color : #1062E5;
       }
+    .btn{
+        background-color: #ffffff;
+        background-opacity: 100%;
+        border-style: none;
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;        
+        margin-bottom: 10px;
+    }
+    .btn:hover{
+        border-style: none;
+        color: #1062E5;
+    }
 `;
-
-
 
 class HeaderContainer extends Component {
     componentDidMount() { //화면 상단으로 이동시켜줌
@@ -36,13 +47,13 @@ class HeaderContainer extends Component {
                 <Headermenu>
                     <ul className="meun-ul">
                         <li className="menu-li">
-                            <Link to={"/DashboardPage"} style={{ textDecoration:'none', color:'black'}}>Dashboard</Link>
+                            <Link to={"/DashboardPage"} style={{ textDecoration:'none', color:'black'}}><Button className="btn">Dashboard</Button></Link>
                         </li>
                         <li className="menu-li">
-                            <Link to={"/classroom"} style={{ textDecoration:'none',color:'#1062E5'}}>Classroom</Link>
+                            <Link to={"/classroom"} style={{ textDecoration:'none',color:'black'}}><Button className="btn">Classroom</Button></Link>
                         </li>
                         <li className="menu-li">
-                            <Link to={"/"} style={{ textDecoration:'none', color:'black'}}>Contest</Link>
+                            <Link to={"/ContestIndex"} style={{ textDecoration:'none', color:'black'}}><Button className="btn">Contest</Button></Link>
                         </li>
                     </ul>
                 </Headermenu>
