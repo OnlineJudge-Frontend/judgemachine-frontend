@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import palette from '../../lib/styles/palette';
+//import palette from '../../lib/styles/palette';
 import { Link } from 'react-router-dom';
 /*
  * 회원가입과 로그인 페이지의 레이아웃을 담당하는 컴포넌트
@@ -18,7 +18,6 @@ import { Link } from 'react-router-dom';
     top: 0;
     bottom: 0;
     right: 0;
-    background: ${palette.gray[2]};
     
     /* flex로 내부 내용 중앙 정렬시킴 */
     display: flex;
