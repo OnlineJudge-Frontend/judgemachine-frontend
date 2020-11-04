@@ -13,14 +13,15 @@ import Homeworkcontent from './pages/Homeworkcontent';
 import HomeworkCheck from './pages/HomeworkCheck';
 import HomeworkSubmit from './pages/HomeworkSubmit';
 import ExamCheck from './pages/ExamCheck';
-import ImagePass from './pages/test/imagepass';
 import DashboardPage from './pages/DashboardPage';
 import ContestQuestion from './pages/ContestQuestion';
+import Hi from './pages/test/Hi';
+
 
 const App = () => {
   return (
     <>
-      <Route component={ImagePass} path="/"exact />
+      <Route component={Hi} path="/"exact />
       {/* <Route component={CarouselPage} path={['/@:username', '/']}exact /> */}
       <Route component={LoginPage} path="/login" />
       <Route component={RegisterPage} path="/register" />
