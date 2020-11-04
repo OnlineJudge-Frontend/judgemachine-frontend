@@ -2,16 +2,14 @@ import React, { Component } from 'react';
 //import Button from '../components/common/Button';
 //import { Link } from 'react-router-dom';
 import HeaderContainer from '../containers/Base/HeaderContainer';
-import Dashboardbody from '../containers/Base/Dashboardbody';
-
-
+import ClassroomProfBody from '../containers/Base/ClassroomProfBody';
 
 
 class DashboardPage extends Component {
     render(){
         return(
             <div>
-                <Dashboardbody/>
+                <ClassroomProfBody/>
                 <HeaderContainer/>
             </div>
         );

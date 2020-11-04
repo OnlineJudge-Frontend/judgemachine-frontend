@@ -16,6 +16,7 @@ import ExamCheck from './pages/ExamCheck';
 import DashboardPage from './pages/DashboardPage';
 import ContestQuestion from './pages/ContestQuestion';
 import Hi from './pages/test/Hi';
+import ClassroomProfPage from './pages/ClassroomProfPage';
 
 
 const App = () => {
@@ -36,7 +37,7 @@ const App = () => {
       <Route component={HomeworkSubmit} path="/HomeworkSubmit" />
       <Route component={DashboardPage} path="/DashboardPage" />
       <Route component={ContestQuestion} path="/ContestIndex" />
-
+      <Route component={ClassroomProfPage} path="/ClassroomProfPage" />
     </>
   );
 };

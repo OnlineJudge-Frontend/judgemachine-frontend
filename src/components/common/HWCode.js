@@ -29,11 +29,11 @@ const CardBody = styled.div`
         margin-bottom: 5px;
     }
     .Cardborder{
-        width: 500px;
+        width: 520px;
         height: 100px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         border-radius: 5px;
-        box-shadow: 0px 2px 5px #00000054;
+        box-shadow: 0px 2px 4px #00000054;
         border: 1px solid #ffffff;
         opacity: 1;
         display:flex;
@@ -59,8 +59,6 @@ const CardBody = styled.div`
     }
     outline: none;
     cursor: pointer;
-    
-
 `;
 
 
