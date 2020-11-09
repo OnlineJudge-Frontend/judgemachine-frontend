@@ -15,6 +15,9 @@ import HomeworkSubmit from './pages/HomeworkSubmit';
 import ExamCheck from './pages/ExamCheck';
 import DashboardPage from './pages/DashboardPage';
 import ContestQuestion from './pages/ContestQuestion';
+import ContestIndex from './pages/ContestIndex';
+import ContestSolve from './pages/ContestSolve';
+import ContestScoreboard from './pages/ContestScoreboard'
 import Hi from './pages/test/Hi';
 import ClassroomProfPage from './pages/ClassroomProfPage';
 
@@ -36,7 +39,10 @@ const App = () => {
       <Route component={HomeworkCheck} path="/homeworkCheck" />
       <Route component={HomeworkSubmit} path="/HomeworkSubmit" />
       <Route component={DashboardPage} path="/DashboardPage" />
-      <Route component={ContestQuestion} path="/ContestIndex" />
+      <Route component={ContestQuestion} path="/ContestQuestion" />
+      <Route component={ContestIndex} path="/ContestIndex" />
+      <Route component={ContestSolve} path="/ContestSolve" />
+      <Route component={ContestScoreboard} path="/ContestScoreboard" />
       <Route component={ClassroomProfPage} path="/ClassroomProfPage" />
     </>
   );

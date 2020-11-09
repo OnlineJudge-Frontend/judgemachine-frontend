@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import HeaderContainer from '../containers/Base/HeaderContainer';
+import { Link } from 'react-router-dom';
+import {  media } from '../lib/styles/styleUtil';
 import Switch from "../components/common/Switch";
-
+import Card from '../components/common/ContestQuestionCard';
 
 const SideMenu = styled.div`    
     margin-bottom: 3px;
@@ -26,31 +28,74 @@ const SideMenu = styled.div`
         font-weight: 750;
         font-size: 18px;
     }
+  
 `;
 
+const QuestionBody = styled.div`
+    width: 2000px;
+    display: inline;
+    flex-direction: row;
+    align-items: center;
 
-class ContestIndex extends Component {
-    render(){
-        return(
-            <div>                
-                <HeaderContainer/>
+    margin-top: 100px;
 
-                <SideMenu>
-                    <div className="switch-btn">
-                        <p>난이도</p>                   
-                        <Switch />                        
-                    </div> 
-                    <div className="horizontal">
-                        <hr/>
-                        <p>Score board</p>
-                    </div>
-                </SideMenu>
+    padding-right: 1rem;
+    padding-left: 2rem;
 
-                
-                                       
-            </div>
-        );
+    ${media.wide`
+        width: 992px;
+    `}
+
+    ${media.tablet`
+        width: 100%;
+    `}
+
+    .Array{
+        display : flex;
+        margin-bottom:40px;
+        margin-top:80px;
+        margin-left: 200px;
     }
-}
 
-export default ContestIndex;
+    .Card-array{
+        margin: 100px 200px 40px 200px;
+        display : inline-flex;
+    }
+
+`;
+
+const ContestQuestion = ({children}) => {
+    return (  
+        <div>
+            <HeaderContainer/>
+
+            <SideMenu>
+                <div className="switch-btn">
+                    <p>난이도</p>                   
+                    <Switch />                        
+                </div> 
+                <div className="horizontal">
+                    <hr/>
+                    <Link to={"/ContestScoreboard"} style={{ textDecoration: 'none', color: 'black' }}><p>Score board</p></Link>
+                </div>
+            </SideMenu> 
+
+            <QuestionBody>
+                <div className="Card-array" style={{  display:'flex', justifyContent:'space-evenly'}}>
+                        <Link to={"/ContestSolve"} style={{ textDecoration:'none'}}><Card></Card></Link>
+                        <Link to={"/ContestSolve"} style={{ textDecoration:'none'}}><Card></Card></Link>
+                        
+                </div>
+                <div className="Card-array" style={{  display:'flex', justifyContent:'space-evenly'}}>
+                        <Link to={"/ContestSolve"} style={{ textDecoration:'none'}}><Card></Card></Link>
+                        <Link to={"/ContestSolve"} style={{ textDecoration:'none'}}><Card></Card></Link>
+                        
+                </div>
+                {children}
+            </QuestionBody>
+        </div>
+            
+    );
+};
+
+export default ContestQuestion;
