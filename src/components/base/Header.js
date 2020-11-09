@@ -18,6 +18,7 @@ const Positioner = styled.div`
 const Box = styled.div`
     height: 1px;
     background: white;
+   
 `;
 
 // 흰 배경, 내용 중간 정렬
