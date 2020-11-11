@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import CarouselPage from './pages/CarouselPage';
@@ -21,8 +21,20 @@ import ContestScoreboard from './pages/ContestScoreboard'
 import Hi from './pages/test/Hi';
 import ClassroomProfPage from './pages/ClassroomProfPage';
 
+import axios from 'axios';
 
 const App = () => {
+
+  /*
+  useEffect(() => {
+    const apiCall = async () => {
+
+      const response = await axios.get(url);
+      console.log(response.data);
+    };
+    apiCall();
+  }, [])*/
+
   return (
     <>
       <Route component={Hi} path="/"exact />
