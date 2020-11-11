@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import HeaderContainer from '../containers/Base/HeaderContainer';
 import { Link } from 'react-router-dom';
 import {  media } from '../lib/styles/styleUtil';
-import Switch from "../components/common/Switch";
+//import Switch from "../components/common/Switch";
 import Card from '../components/common/ContestQuestionCard';
 
 const SideMenu = styled.div`    
@@ -70,12 +70,8 @@ const ContestQuestion = ({children}) => {
             <HeaderContainer/>
 
             <SideMenu>
-                <div className="switch-btn">
-                    <p>난이도</p>                   
-                    <Switch />                        
-                </div> 
+                
                 <div className="horizontal">
-                    <hr/>
                     <Link to={"/ContestScoreboard"} style={{ textDecoration: 'none', color: 'black' }}><p>Score board</p></Link>
                 </div>
             </SideMenu> 
