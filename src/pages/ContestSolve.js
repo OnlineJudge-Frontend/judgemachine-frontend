@@ -41,7 +41,6 @@ const Content = styled.div`
         color: white;
         border: none;
         font-size: 16px;
-        text-align: center;
         text-decoration: none;
         display: inline-block;
         border-radius: 8px;
